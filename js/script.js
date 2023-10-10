@@ -29,11 +29,16 @@ quotes.push(
       "zoltan",
       "Ashton Kutcher",
       "Sean William Scott",
-    ],
+    ]
   },
   {
     quote: "I'll be back.",
     source: "Terminator",
+    tags: [
+      "T100",
+      "Arnold",
+      "CyberneticOrganism",
+    ]
   },
   {
     quote: "Speak softly and carry a big stick.",
@@ -93,8 +98,8 @@ function printQuote() {
   updateBGColor();
 }
 
-
-
+//auto refresh every 20 seconds.
+setInterval(printQuote,20000);
 
 
 /***
